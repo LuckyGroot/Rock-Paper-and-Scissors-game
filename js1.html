@@ -35,7 +35,7 @@
       <h1 id="result"></h1>
       <div id="count"></div>
       <div id="countt"></div>
-      <input type="button" value="Reset" name="refresh" onclick="history.go(0)"/>
+      <input type="button" value="Reset Game" name="refresh" onclick="history.go(0)"/>
     </div>
 
     <script type="text/javascript">
@@ -79,14 +79,14 @@
 
             setTimeout(function () {
               compare();
-            }, 500);
+            }, 300);
 
             setTimeout(function () {
               clearChoice();
               result.innerHTML = "";
               user.style.border = 0;
               computer.style.border = 0;
-            }, 1500); 
+            }, 1000); 
     	});
 
     	
@@ -99,14 +99,14 @@
 
             setTimeout(function () {
               compare();
-            }, 500);
+            }, 300);
 
             setTimeout(function () {
               clearChoice();
               result.innerHTML = "";
               user.style.border = 0;
               computer.style.border = 0;
-            }, 1500); 
+            }, 1000); 
     	});
 
 
@@ -119,14 +119,14 @@
 
             setTimeout(function () {
               compare();
-            }, 500);
+            }, 300);
 
             setTimeout(function () {
               clearChoice();
               result.innerHTML = "";
               user.style.border = 0;
               computer.style.border = 0;
-            }, 1500); 
+            }, 1000); 
     	});
 
 
@@ -192,18 +192,9 @@
     	};
       
 
-      // CALLING ALL FUNCTIONS --------------------------------------------
+      // CREATING FUNCTIONS FOR RESULT COUNTING--------------------------------------------
 
-      // button.addEventListener('click', function() {
-      //     console.log(user.src);
-      //     console.log(computer.src);
-      //     compare();
-            
-      //     setTimeout(function () {
-      //       clearChoice();
-      //       result.innerHTML = "";
-      //     }, 1500);
-      // });
+      
       var count = document.getElementById('count');
       var countt = document.getElementById('countt');
       var cnt = 0;
